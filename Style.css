@@ -1,0 +1,35 @@
+.linha{
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+}
+.titulo{
+    text-align: center;
+}
+.col{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+a{
+    display: flex;
+    align-items: end;
+}
+.img{
+   height: 50px;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    align-items: center ;
+}
+.cor{
+    background-color:ghostwhite;
+}
