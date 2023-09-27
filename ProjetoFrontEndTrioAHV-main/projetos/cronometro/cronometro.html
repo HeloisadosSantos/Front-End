@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Cronômetro</h1>
+        <p>Projeto de Front-End</p>
+    </div>
+    <div class="cronometro">
+        <div class="horas">
+            <h1 id="hours">00</h1>
+        </div>
+        <div class="separator">
+            <h3>:</h3>
+        </div>
+        <div class="minutos">
+            <h1 id="minutes">00</h1>
+        </div>
+        <div class="separator">
+            <h3>:</h3>
+        </div>
+        <div class="segundos">
+            <h1 id="seconds">00</h1>
+        </div>
+    </div>
+    <div class="botoes">
+        <button id="iniciar" onclick="start()">Iniciar</button>
+        <button id = "pausar" onclick="pause()">Pausar</button>
+        <button id = "retomar" onclick="resume()">Retomar</button>
+        <button id = "parar" onclick="stop()">Parar</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

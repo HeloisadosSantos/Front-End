@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "Schibsted Grotesk Regular";
+    src:
+        local("Schibsted Grotesk Regular"),
+        url("fonts/SchibstedGrotesk-Regular.woff2") format("woff2");
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Schibsted Grotesk Black";
+    src:
+        local("Schibsted Grotesk Black"),
+        url("fonts/SchibstedGrotesk-Black.woff2") format("woff2");
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Schibsted Grotesk Bold";
+    src:
+        local("Schibsted Grotesk Bold"),
+        url("fonts/SchibstedGrotesk-Bold.woff2") format("woff2");
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Schibsted Grotesk ExtraBold";
+    src:
+        local("Schibsted Grotesk ExtraBold"),
+        url("fonts/SchibstedGrotesk-ExtraBold.woff2") format("woff2");
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Schibsted Grotesk Medium";
+    src:
+        local("Schibsted Grotesk Medium"),
+        url("fonts/SchibstedGrotesk-Medium.woff2") format("woff2");
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Schibsted Grotesk SemiBold";
+    src:
+        local("Schibsted Grotesk SemiBold"),
+        url("fonts/SchibstedGrotesk-SemiBold.woff2") format("woff2");
+}
+
+@keyframes pulse {
+    0% {
+      letter-spacing: 0px;
+    }
+    50% {
+      transform: scale(1.02);
+      letter-spacing: 3px;
+    }
+  }
+
+body{
+    font-family: "Schibsted Grotesk Regular";
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 200px;
+}
+
+.title h1{
+    text-decoration: underline 4px #004ec5;
+    animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+}
+
+.title p{
+    color: #050500;
+    transition: 0.5s;
+}
+.title p:hover{
+    font-family: "Schibsted Grotesk Black";
+    letter-spacing: 2px;
+    color: #FFF;
+    background-color: #004ec5;
+    border-radius: 20px;
+    padding: 12px;
+    transition: 0.5s;
+}
+
+h1{
+    font-family: "Schibsted Grotesk Black";
+    line-height: 1px;
+    color: #050500;
+}
+
+p{
+    font-family: "Schibsted Grotesk Regular";
+    line-height: 1px;
+    color: #050500;
+}
+
+.cronometro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 30px 30px;
+}
+
+.cronometro h1{
+    transition: 0.5s;
+}
+
+.cronometro h3{
+    transition: 0.5s;
+}
+
+.horas{
+    text-align: center;
+    margin:30px 30px;
+}
+
+.horas h1{
+    font-size: 72px;
+}
+
+.minutos{
+    text-align: center;
+    margin:30px 30px;
+}
+
+.minutos h1{
+    font-size: 72px;
+}
+
+.segundos{
+    text-align: center;
+    margin:30px 30px;
+}
+
+.segundos h1{
+    font-size: 72px;
+}
+
+.separator h3{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 12px;
+    padding: 12px;
+}
+
+.botoes button{
+    font-family: "Schibsted Grotesk Black";
+    border: none;
+    background-color: #004ec5;
+    color: #FFF;
+    border-radius: 8px;
+    margin: 1px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botoes button:hover{
+    border: none;
+    background-color: #003381;
+    color: #FFF;
+    transition: 0.5s;
+}
+.botoes button:active{
+    border: none;
+    background-color: #001535;
+    color: #FFF;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 412px) {
+    .cronometro h1{
+        font-size: 48px;
+        margin: 0px -30px;
+        transition: 0.5s;
+    }
+    .cronometro h3{
+        font-size: 18px;
+        padding: 0px;
+        margin: 10px 0px;
+        transition: 0.5s;
+    }
+}
